@@ -63,5 +63,15 @@ namespace Variant_4
         {
             get { return category_; }
         }
+        public string GetFullInfo()
+        {
+            return $"Название: {name_}\n" +
+                   $"Категория: {category_}\n" +
+                   $"Цена: {price_:F2} руб.\n" +
+                   $"Производитель: {manufacturer_}\n" +
+                   $"Поставщик: {supplier_}\n" +
+                   $"Срок годности: {shelfLifeDate_:MM.yyyy}\n" +
+                   $"Описание: {description_}";
+        }
     }
 }
