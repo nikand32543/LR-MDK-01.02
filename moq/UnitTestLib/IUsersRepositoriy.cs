@@ -13,5 +13,7 @@ namespace UnitTestLib
         List<User> LoadUserInfo();
         User GetUser(string login);
         void Add(User user);
+
+
     }
 }

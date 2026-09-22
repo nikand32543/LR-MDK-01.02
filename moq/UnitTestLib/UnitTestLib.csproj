@@ -54,6 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImportFromFile.cs" />
+    <Compile Include="IUserFile.cs" />
     <Compile Include="IUsersRepositoriy.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserServicec.cs" />
