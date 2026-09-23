@@ -26,6 +26,7 @@ namespace UnitTest
             ImportFromFile importer = new ImportFromFile(file, repository);
             bool Flag = importer.ImportUser("users.txt");
             Assert.IsTrue(Flag);
+
         }
         [TestMethod]
         public void TestMethod_UnsuccessfulImport() // неудачный импорт пользователь с пробелом  пропущен, в БД ничего
