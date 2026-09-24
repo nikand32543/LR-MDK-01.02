@@ -15,7 +15,6 @@ namespace UnitTest
             {
                 new User { Login = "login123", Password = "123", Name = "Ivan", LastName = "Ivanov" }
             };
-
             var fileMock = new Mock<IUserFile>(); // мок обьект для интерфейса
             fileMock.Setup(files => files.ReadAllLines("users.txt")).Returns(users);
             var repoMock = new Mock<IUsersRepositoriy>();
